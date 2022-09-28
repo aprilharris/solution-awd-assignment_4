@@ -38,30 +38,30 @@ _**F° to C°**: Subtract 32, Multiply by 5, then divide by 9.
 // _Unicode Characters_: To print the degrees symbol in JavaScript, we need to use the write \u00B0 to represent the unicode character for the degrees symbol. */
 //create a variable called "c"
 //we'll use this variable to store the value of our celsius temperature
-let c;
+// let c;
 //next, let's assign a value to c
 //in other words, enter the C° temperature you wish to convert
 //we'll update c's value anytime we want to convert C° to F°
-c = 20;
+// c = 20;
 //create a new variable called "c_to_f"
 //let's make c_to_f equal to the C° to °F conversion formula
-let c_to_f = (c * 9) / 5 + 32;
+// let c_to_f = (c * 9) / 5 + 32;
 // finally, let's print the result to the console
-console.log("\n\n**Celsius to Fahrenheit**:");
-console.log(c + '\u00B0C is ' + c_to_f + '\u00B0F');
+// console.log("\n\n**Celsius to Fahrenheit**:");
+// console.log(c + '\u00B0C is ' + c_to_f + '\u00B0F');
 //create a variable called "f"
 //we'll use this variable to store the value of our fahrenheit temperature
-let f;
+// let f;
 //next, let's assign a value to f
 //in other words, enter the F° temperature you wish to convert
 //we'll update c's value anytime we want to convert F° to C°
-f = 83;
+// f = 83;
 //create a new variable called "f_to_c"
 //let's make f_to_c equal to the F° to °C conversion formula
-let f_to_c = (f - 32) / 9 * 5;
+// let f_to_c = (f - 32) / 9 * 5;
 // finally, let's print the result to the console
-console.log("\n\n**Fahrenheit to Celsius**:");
-console.log(f + '\u00B0F is ' + c + '\u00B0C');
+// console.log("\n\n**Fahrenheit to Celsius**:");
+// console.log(f + '\u00B0F is ' + c + '\u00B0C');
 
 console.log("\n\n*******CHALLENGE 3: BIGGER NUMBER********\n\n");
 // **Challenge 3: Bigger Number**
@@ -120,3 +120,13 @@ console.log(pluralize(3, "pencil"));
 // Using this tool, update your Fahrenheit to Celsius temperature conversion program to do the following:
 // - Instead of inputting a value for the Fahrenheit temp, use `Math.random()` to generate a random temp between 0 and 100
 // - Have the program output: "It is NN°F today. That's NN°C."
+
+let c = Math.random();
+let c_to_f = (c * 9) / 5 + 32;
+console.log("\n\n**Random Celsius to Fahrenheit**:");
+console.log(c + '\u00B0C is ' + c_to_f + '\u00B0F');
+
+let f = Math.random();
+let f_to_c = (f - 32) / 9 * 5;
+console.log("\n\n**Random Fahrenheit to Celsius**:");
+console.log(f + '\u00B0F is ' + c + '\u00B0C');
