@@ -1,6 +1,6 @@
 // ## Class Assignment 4: JavaScript Coding Challenges
 
-console.log("\n\n*******Challenge 1********\n\n");
+console.log("\n\n*******CHALLENGE 1: AGE CALCULATOR********\n\n");
 // **Challenge 1: The Age Calculator**  
 // Forgot how old someone is? Calculate it!
 // - Store the current year in a variable.
@@ -26,14 +26,14 @@ let birthYear = 1928;
 
 // // create the function
 function calculateAge() {
-  console.log("You are either " + (currentYear - birthYear - 1) + " or " + (currentYear-birthYear));
+  console.log("If you were born in " + birthYear + ", " + "you are either " + (currentYear - birthYear - 1) + " or " + (currentYear-birthYear) + ".");
 
 };
 
 // //call the function
 calculateAge();
 
-console.log("\n\n*******Challenge 2********\n\n");
+console.log("\n\n*******CHALLENGE 2: TEMP CONVERSION********\n\n");
 /* **Challenge 2: Temperature Converter** 
  In this activity, we are going to write two functions. The first function will convert Celsius to Fahrenheit. The second function will convert Fahrenheit to Celsius.  This way we can complain about the weather with our friends overseas.
 
@@ -75,7 +75,7 @@ console.log("\n\n**Fahrenheit to Celsius**:");
 console.log(f + '\u00B0F is ' + c + '\u00B0C');
 
 
-console.log("\n\n*******Challenge 3********\n\n");
+console.log("\n\n*******CHALLENGE 3: BIGGER NUMBER********\n\n");
 
 // **Challenge 3: Bigger Number**
 // Write a function that compares two numbers and returns the larger one. Be sure to try it out with some different numbers. 
@@ -104,7 +104,7 @@ console.log( compareNumbers(Math.PI,41052) );
 console.log( compareNumbers(.000000000000000000009,.03) );
 
 
-console.log("\n\n*******Challenge 4********\n\n");
+console.log("\n\n*******CHALLENGE 4: PLURALIZE********\n\n");
 
 // **Challenge 4: Pluralize**
 // Write a function `pluralize` that takes in two arguments, a number and a word, and returns the plural form. 
@@ -123,14 +123,12 @@ function pluralize(n, word) {
     console.log( n + " " + word);
   } else if ( (n>1) && (word == "bus") || (word == "gas") ) {
 console.log(n + " " + word + "es")
-  } else {
-    return n + " " + word;
+  } else if ( (n>1)) {
+    return n + " " + word + "s";
   }
+  else {
+    return n + " " + word;
+}
 };
 
-console.log(pluralize(0, 'cat'));
-console.log(pluralize(1, 'cat'));
-console.log(pluralize(2, 'cat'));
-console.log(pluralize(3, 'geese'));
-console.log(pluralize(3, 'fish'));
-console.log(pluralize(3, 'knife'));
+console.log(pluralize(3, "pencil"));
