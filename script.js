@@ -196,16 +196,16 @@ areaOfCircle(9);
 //   - Calculate the area of a circle with the result of #2 as the radius.
 //   - Calculate what percentage that area is of the squared result (#3).
 
-function multiFunction (d) {
-  let a = halfNumber(d);
-  return a;
-  let b = squareNumber(a);
-  return b;
-  let c = area(b);
-  return c;
-  let q = percentOf(c, b);
-  return q;
-};
+// function multiFunction (d) {
+//   let a = halfNumber(d);
+//   return a;
+//   let b = squareNumber(a);
+//   return b;
+//   let c = area(b);
+//   return c;
+//   let q = percentOf(c, b);
+//   return q;
+// };
 
-multiFunction(99);
+// multiFunction(99);
 
