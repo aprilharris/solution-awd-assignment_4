@@ -12,7 +12,7 @@ In this activity, we are going to write two functions. The first function will c
 _**C° to F°**: Multiply by 9, Divide by 5, then add 32._ 
 _**F° to C°**: Subtract 32, Multiply by 5, then divide by 9._
 
-_Unicode Characters_: To print the degrees symbol in JavaScript, we need to use the write \u00B0 to represent the unicode character for the degrees symbol. 
+_Unicode Characters_: To print the degrees symbol in JavaScript, we need to use the write "\u00B0" to represent the unicode character for the degrees symbol. 
 
 **Challenge 3: Bigger Number**
 Write a function that compares two numbers and returns the larger one. Be sure to try it out with some different numbers. 

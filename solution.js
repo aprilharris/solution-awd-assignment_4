@@ -1,4 +1,5 @@
 //challenge #1
+// const currentYear = new Date().getFullYear();
 // const currentYear = 2022;
 
 
@@ -49,18 +50,39 @@
 // compareNumbers(15, "foo");
 
 
-//challenge #4
-function pluralize(n, word) {
-  if( (n>=1) && (word=="sheep") || (word == "deer") || (word=="fish") ) {
-    console.log(n + " " + word);
-  } else if (n>1) {
-    console.log( n + " " + word + "s" );
+
+//challenge 4
+
+function pluralize (n, word) {
+  if (n != 1 && word != "sheep" && word != "goose" && word != "mouse" && word!=="salmon" && word!=="deer") {
+    console.log(n + ' ' + word + `s`);
+  } else if (n>1 && word=="sheep") {
+    console.log(n+` `+ "sheep")
+  } else if (n>1 && word=="goose") {
+    console.log(n + ` ` + "geese");
+  } else if (n>1 && word=="mouse"){
+    console.log(n + ` ` + "mice");
+  } else if (n>1 && word=="salmon") {
+    console.log(n + ` ` + word);
+  } else if (n>1 && word=="deer") {
+    console.log(n + ` ` + word);
   } else {
-    console.log(n + " " + word);
+    console.log (n + ` ` + word);
   }
+
+  // //nouns with identical singular & plural forms
+  // ( (word=="sheep") || (word=="salmon") || (word=="deer") )
 };
 
-pluralize(1, "cat");
-pluralize(10, "pen");
-pluralize(5, "sheep");
-pluralize(8, "bus");
+pluralize (1, "cat");
+pluralize (3, "cat");
+pluralize (1, "sheep");
+pluralize (3, "sheep");
+pluralize (1, "goose");
+pluralize (3, "goose");
+pluralize (1, "mouse");
+pluralize (3, "mouse");
+pluralize (1, "salmon");
+pluralize (3, "salmon");
+pluralize (1, "deer");
+pluralize (3, "deer");
