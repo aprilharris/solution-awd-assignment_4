@@ -1,16 +1,19 @@
-//challenge #1
-// const currentYear = new Date().getFullYear();
-// const currentYear = 2022;
+// //CHALLENGE #1
+// //declare current year using 'Date' object & 'getFullYear()' method
+//const currentYear = new Date().getFullYear();
+// //declare current year manually 
+// const currentYear = 2023;
 
 
 // function calculateAge(birthYear) {
-//   console.log("If you were born in " + birthYear + ", you are either " + (currentYear - birthYear -1) + " or " + (currentYear - birthYear) + " years old.")
-// };
+//   // console.log("If you were born in " + birthYear + ", you are either " + (currentYear - birthYear -1) + " or " + (currentYear - birthYear) + " years old.")
+//   console.log(`If you were born in ${birthYear}, you are either ${currentYear - birthYear -1} or ${currentYear - birthYear} years old.`)
+//  };
 
 // calculateAge(2005);
 // console.log("\n");
 
-
+/*
 // CHALLENGE #2
 // Below you can find 2 solutions to challenge #2:
   
@@ -42,6 +45,8 @@
   // //pass parameters in & call both functions
   // c_to_f(90);
   // f_to_c(33);
+
+  */
 
 //CHALLENGE #1 - METHOD 2
 // let c = 32;
@@ -82,7 +87,6 @@
 // compareNumbers(15, "foo");
 
 
-
 //CHALLENGE #4
 /* In English, to pluralize a word, typically you just add an "s" at the end. Still, the English language has many irregular plural nouns. For example, "1 box" becomes "3 boxes." Additionally you have situations like "ox & oxen," "leaf & leaves," and "child & children." We'd probably have to build an entire JS library if we wanted a script that can properly pluralize every noun in the English language. Rather than do this, let's just write some code that pluralizes regular nouns and then, let's write some conditionals for a couple of idiosyncratic words."*/
 // function pluralize (n, word) {
@@ -114,4 +118,4 @@
 // pluralize (1, "salmon");
 // pluralize (3, "salmon");
 // pluralize (1, "deer");
-// pluralize (3, "deer");
+// pluralize (3, "deer"); */
