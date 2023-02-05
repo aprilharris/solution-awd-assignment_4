@@ -1,67 +1,24 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-   <title>Assignment 4 (Solutions)</title>
-<!--    BOOTSTRAP CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-   <!--OUR CSS-->
-   <link href="style.css" rel="stylesheet" type="text/css" />
-   <!--Jquery Link-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
- 
- </head>
- <body>
-   <header class="bg-dark text-light text-center py-5">
-<h1 class="mb-3">Assigment 4: Javascript Coding Challenges</h1>
-   <p>Access the solutions file<a href="script.js"> here</a> </p>
- </header>
-   <main class="container">
-<section id="tempConversion" class="text-center container">
-<h2 class="m-3">Temperature Converter</h2>
- 
-   <div class="card text-center w-auto"> 
-      <div class="card-header">
-    Fahrenheit to Celsius
-  </div>
-<div class="card-body">
-     <div class="input-group mb-3">
-  <input id="fahrenheit" type="number" class="form-control" placeholder="Enter &#xb0;F here">  <span class="input-group-text" id="fahrenheit">&#xb0;F</span>
-     </div>
-<!-- load celsius output -->
-<div id="celsius" class="my-3 fw-bold"></div>
-  
-  <button class="btn btn-dark" onclick="convertFahrenheit();">Convert!</button>
-   
-</div>
-   </div>
-</section>
-   </main>
-<!--    <script>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<title>Assignment 4 (Solutions)</title><!--    BOOTSTRAP CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"><!--OUR CSS-->
+	<link href="style.css" rel="stylesheet" type="text/css"><!--Jquery Link-->
 
-     //grab & store fahrenheit input
-     let fahrenheit = document.getElementById('fahrenheit');
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
+	</script>
+</head>
+<body>
+	<header class="bg-dark text-white p-5">
+    <div class="container">
+		<h1 class="fw-bold display-5 mb-3">Assigment 4: Javascript Coding Challenges</h1>
+    <p class="fs-4">Access the solutions file <a href="solutions.js">here</a>.</p>
+    </div>
+	</header>
 
-
-     $('#fahrenheit').click(function() {
-	//take user's input and store it in variable called fahrenheitInput 
-	let fahrenheitInput = $('#fahrenheit').val();
-
-       let f_to_c = (c) -->
-       
-
-<!-- // function convertFahrenheit() {
-//   // convert fahrenheit to celcius  let toCelsius = (Number(fahrenheit.value) - 32) * 5/9;
-//   // insert result to the celsius input
-//   celsius.value = Math.round(toCelsius);
-//   celsius.text.value=Math.round(toCelsius);
-//   // insert result to the kelvin input
-//   kelvin.value = Math.round(toKelvin);
-// } -->
-
-   </script>
-   <script src="solution.js"></script>
-  </body>
-   
+<script src="script.js"></script>
+<!--      <script src="solutions.js"></script> -->
+</body>
 </html>
